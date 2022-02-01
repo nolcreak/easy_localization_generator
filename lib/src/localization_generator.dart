@@ -89,7 +89,7 @@ class CSVParser {
   String getLocaleKeys(List<String> preservedKeywords) {
     final oldKeys =
         lines.getRange(1, lines.length).map((e) => e.first.toString()).toList();
-    final keys = List<String>();
+    final List<String> keys = [];
     final strBuilder = StringBuffer();
     oldKeys.forEach((element) {
       reNewKeys(preservedKeywords, keys, element);
